@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="819.0" prefWidth="1480.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.break_house_demo.GameController">
+   <children>
+      <Pane prefHeight="822.0" prefWidth="1484.0">
+         <children>
+            <ImageView fitHeight="1235.0" fitWidth="1502.0" pickOnBounds="true" preserveRatio="true" scaleZ="0.0">
+               <image>
+                  <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/background.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="1131.0" fitWidth="1839.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/middleground.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="429.0" fitWidth="355.0" layoutX="279.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/props-sliced/house-b.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="535.0" fitWidth="487.0" layoutX="950.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/props-sliced/house-a.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="block" prefHeight="918.0" prefWidth="1480.0">
+         <children>
+            <Pane layoutX="636.0" layoutY="726.0" prefHeight="20.0" prefWidth="354.0">
+               <children>
+                  <ImageView fitHeight="75.0" fitWidth="78.0" layoutX="13.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-left-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="88.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="123.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="156.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="190.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="225.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="258.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="291.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-right-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="-2.0" layoutY="705.0" prefHeight="41.0" prefWidth="359.0">
+               <children>
+                  <ImageView fitHeight="75.0" fitWidth="78.0" layoutX="13.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-left-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="88.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="123.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="156.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="190.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="225.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="258.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="66.0" fitWidth="63.0" layoutX="291.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-right-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="435.0" layoutY="516.0" prefHeight="3.0" prefWidth="174.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="-15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="122.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="1072.0" layoutY="639.0" prefHeight="43.0" prefWidth="174.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="-15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="122.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="789.0" prefHeight="151.0" prefWidth="1484.0">
+               <children>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="-2.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="48.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="98.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="148.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="198.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="348.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="298.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="248.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="398.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="448.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="498.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="548.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="598.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="748.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="698.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="648.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="794.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="844.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="894.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="944.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="994.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1144.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1094.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1044.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1194.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1244.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1294.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1344.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1394.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1544.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1494.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="183.0" fitWidth="50.0" layoutX="1444.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/ground-b.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label layoutX="1200.0" prefHeight="79.0" prefWidth="175.0" styleClass="text" stylesheets="@../../../FontCSS.css" text="Coins" textFill="WHITE">
+         <font>
+            <Font name="Academy Engraved LET Plain:1.0" size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="coinsCounter" layoutX="1400.0" prefHeight="79.0" prefWidth="39.0" styleClass="text" stylesheets="@../../../FontCSS.css" text="0" textFill="WHITE">
+         <font>
+            <Font name="Academy Engraved LET Plain:1.0" size="64.0" />
+         </font>
+      </Label>
+      <Pane fx:id="coinsPane" prefHeight="819.0" prefWidth="1488.0">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="823.0" layoutY="701.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/bk/coin/Coin_spin3.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="1179.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/bk/coin/Coin_spin3.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="1331.0" layoutY="741.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/bk/coin/Coin_spin3.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="509.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/bk/coin/Coin_spin3.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="141.0" layoutY="763.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/bk/coin/Coin_spin3.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="29.0" layoutX="288.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/bk/coin/Coin_spin3.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="29.0" layoutX="1200.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/bk/coin/Coin_spin3.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="movedBlocksPaneVertical" prefHeight="822.0" prefWidth="1496.0">
+         <children>
+            <Pane layoutX="737.0" layoutY="683.0" prefHeight="17.0" prefWidth="174.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="-15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="122.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="1292.0" layoutY="396.0" prefHeight="31.0" prefWidth="176.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="-15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="122.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="406.0" prefHeight="31.0" prefWidth="188.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="-15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="122.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="movedBlocksPaneHorizontal" layoutX="10.0" layoutY="10.0" prefHeight="822.0" prefWidth="1496.0">
+         <children>
+            <Pane layoutX="215.0" layoutY="506.0" prefHeight="2.0" prefWidth="174.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="-15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="122.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="1116.0" layoutY="527.0" prefHeight="2.0" prefWidth="174.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="-15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="106.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="122.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="34.0" fitWidth="43.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/bk/GothicVania-town-files/PNG/environment/layers/sliced-tileset/top-wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="playerPane" prefHeight="76.0" prefWidth="91.0">
+         <children>
+            <ImageView fx:id="playerImg" fitHeight="84.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../../../assets/bk/player/adventurer-idle-00.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="100.0" />
+               </rotationAxis>
+            </ImageView>
+            <Pane fx:id="deathPane" layoutX="27.0" layoutY="11.0" prefHeight="55.0" prefWidth="36.0" />
+            <Pane fx:id="jumpPane" layoutX="25.0" layoutY="66.0" prefHeight="6.0" prefWidth="41.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="menuPane" layoutY="900.0" prefHeight="837.0" prefWidth="1496.0" stylesheets="@../../../FontCSS.css">
+         <children>
+            <Pane prefHeight="842.0" prefWidth="1503.0" styleClass="pauseContainer">
+               <children>
+                  <Label fx:id="menuHeaderText" layoutX="567.0" layoutY="224.0" prefHeight="77.0" prefWidth="464.0" styleClass="textLose" stylesheets="@../../../FontCSS.css" text="You Lose" textFill="WHITE" />
+                  <Label layoutX="449.0" layoutY="381.0" prefHeight="77.0" prefWidth="644.0" styleClass="text" stylesheets="@../../../FontCSS.css" text="Press R to restart" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

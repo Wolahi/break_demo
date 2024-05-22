@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Pixelify Sans', sans-serif;;
+    src: url('PixelifySans-VariableFont_wght.ttf');
+}
+
+.text {
+    -fx-font-family: 'Pixelify Sans', sans-serif;;
+    -fx-font-size: 64px ;
+    -fx-color: white;
+}
+
+.textLose {
+    -fx-font-size: 96px;
+}
+
+
+.pauseContainer {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}
